@@ -1,6 +1,6 @@
 Name:		station
 Version:	1.1.1
-Release:	1
+Release:	2
 Source0:	https://invent.kde.org/maui/station/-/archive/v%{version}/station-v%{version}.tar.bz2
 Group:		Applications/Productivity
 Summary:	Terminal for Plasma Mobile
@@ -26,7 +26,10 @@ Terminal for Plasma Mobile
 
 %install
 %ninja_install -C build
+mkdir -p %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
+cp src/assets/station.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/maui-station.svg
 
 %files
 %{_bindir}/station
 %{_datadir}/applications/org.kde.station.desktop
+%{_datadir}/icons/hicolor/scalable/apps/maui-station.svg
