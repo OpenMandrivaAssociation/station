@@ -7,12 +7,17 @@ Summary:	Terminal for Plasma Mobile
 License:	GPLv3
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
+BuildRequires:  cmake(KF5I18n)
+BuildRequires:  cmake(KF5CoreAddons)
+BuildRequires:  cmake(KF5Config)
+BuildRequires:  cmake(KF5KIO)
 BuildRequires:	cmake(Qt5Qml)
 BuildRequires:	cmake(Qt5Quick)
 BuildRequires:	cmake(Qt5Sql)
 BuildRequires:	cmake(Qt5Svg)
 BuildRequires:	cmake(Qt5QuickControls2)
 BuildRequires:	cmake(Qt5Widgets)
+
 
 %description
 Terminal for Plasma Mobile
