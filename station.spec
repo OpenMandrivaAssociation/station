@@ -1,6 +1,6 @@
 Name:		station
 Version:	1.2.1
-Release:	1
+Release:	2
 Source0:	https://invent.kde.org/maui/station/-/archive/v%{version}/station-v%{version}.tar.bz2
 Group:		Applications/Productivity
 Summary:	Terminal for Plasma Mobile
@@ -18,6 +18,8 @@ BuildRequires:	cmake(Qt5Svg)
 BuildRequires:	cmake(Qt5QuickControls2)
 BuildRequires:	cmake(Qt5Widgets)
 BuildRequires:	cmake(MauiKit)
+
+Requires: qmltermwidget
 
 %description
 Terminal for Plasma Mobile
