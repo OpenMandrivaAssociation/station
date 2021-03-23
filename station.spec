@@ -17,6 +17,7 @@ BuildRequires:	cmake(Qt5Sql)
 BuildRequires:	cmake(Qt5Svg)
 BuildRequires:	cmake(Qt5QuickControls2)
 BuildRequires:	cmake(Qt5Widgets)
+BuildRequires:	cmake(MauiKit)
 
 
 %description
