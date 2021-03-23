@@ -37,4 +37,4 @@ Terminal for Plasma Mobile
 %files
 %{_bindir}/station
 %{_datadir}/applications/org.kde.station.desktop
-#{_datadir}/icons/hicolor/scalable/apps/maui-station.svg
+%{_datadir}/icons/hicolor/scalable/apps/station.svg
