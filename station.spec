@@ -19,7 +19,6 @@ BuildRequires:	cmake(Qt5QuickControls2)
 BuildRequires:	cmake(Qt5Widgets)
 BuildRequires:	cmake(MauiKit)
 
-
 %description
 Terminal for Plasma Mobile
 
@@ -38,4 +37,4 @@ Terminal for Plasma Mobile
 %files
 %{_bindir}/station
 %{_datadir}/applications/org.kde.station.desktop
-%{_datadir}/icons/hicolor/scalable/apps/maui-station.svg
+#{_datadir}/icons/hicolor/scalable/apps/maui-station.svg
