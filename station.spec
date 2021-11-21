@@ -1,5 +1,5 @@
 Name:		station
-Version:	2.0.0
+Version:	2.1.0
 Release:	1
 Source0:	https://invent.kde.org/maui/station/-/archive/v%{version}/station-v%{version}.tar.bz2
 Group:		Applications/Productivity
