@@ -18,6 +18,7 @@ BuildRequires:	cmake(Qt5Svg)
 BuildRequires:	cmake(Qt5QuickControls2)
 BuildRequires:	cmake(Qt5Widgets)
 BuildRequires:	cmake(MauiKit)
+BuildRequires:  qml(QMLTermWidget)
 
 Requires: qmltermwidget
 
