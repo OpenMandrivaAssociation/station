@@ -1,6 +1,7 @@
 Name:		station
 Version:	2.1.0
 Release:	1
+URL:      https://invent.kde.org/maui/station/
 Source0:	https://invent.kde.org/maui/station/-/archive/v%{version}/station-v%{version}.tar.bz2
 Group:		Applications/Productivity
 Summary:	Terminal for Plasma Mobile
