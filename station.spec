@@ -1,8 +1,10 @@
+%define snapshot 20220107
+
 Name:		station
-Version:	2.1.0
-Release:	2
-URL:      https://invent.kde.org/maui/station/
-Source0:	https://invent.kde.org/maui/station/-/archive/v%{version}/station-v%{version}.tar.bz2
+Version:	2.1.1
+Release:	%{?snapshot:0.%{snapshot}.}1
+URL:		https://invent.kde.org/maui/station/
+Source0:	https://invent.kde.org/maui/station/-/archive/%{?snapshot:master/station-master.tar.bz2#/station-%{snapshot}}%{!?snapshot:v%{version}/station-v%{version}}.tar.bz2
 Group:		Applications/Productivity
 Summary:	Terminal for Plasma Mobile
 License:	GPLv3
@@ -27,7 +29,7 @@ Requires: qmltermwidget
 Terminal for Plasma Mobile
 
 %prep
-%autosetup -p1 -n %{name}-v%{version}
+%autosetup -p1 -n %{name}-%{?snapshot:master}%{!?snapshot:v%{version}}
 %cmake_kde5
 
 %build
