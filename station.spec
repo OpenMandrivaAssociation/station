@@ -43,7 +43,10 @@ Terminal for Plasma Mobile
 #mkdir -p %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
 #cp src/assets/station.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/maui-station.svg
 
-%files
+%find_lang station
+
+%files -f station.lang
 %{_bindir}/station
 %{_datadir}/applications/org.kde.station.desktop
 %{_datadir}/icons/hicolor/scalable/apps/station.svg
+%{_datadir}/metainfo/org.kde.station.appdata.xml
