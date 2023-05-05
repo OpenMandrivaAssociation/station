@@ -27,6 +27,7 @@ BuildRequires:	cmake(MauiKitFileBrowsing)
 BuildRequires:  cmake(MauiKitTerminal)
 
 Requires: qmltermwidget
+Requires: qml(org.mauikit.terminal)
 
 %description
 Terminal for Plasma Mobile
