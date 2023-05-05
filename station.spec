@@ -1,7 +1,7 @@
-%define snapshot 20220107
+#define snapshot 20220107
 
 Name:		station
-Version:	2.1.1
+Version:	2.2.2
 Release:	%{?snapshot:0.%{snapshot}.}1
 URL:		https://invent.kde.org/maui/station/
 Source0:	https://invent.kde.org/maui/station/-/archive/%{?snapshot:master/station-master.tar.bz2#/station-%{snapshot}}%{!?snapshot:v%{version}/station-v%{version}}.tar.bz2
@@ -14,6 +14,7 @@ BuildRequires:  cmake(KF5I18n)
 BuildRequires:  cmake(KF5CoreAddons)
 BuildRequires:  cmake(KF5Config)
 BuildRequires:  cmake(KF5KIO)
+BuildRequires:  cmake(Qt5DBus)
 BuildRequires:	cmake(Qt5Qml)
 BuildRequires:	cmake(Qt5Quick)
 BuildRequires:	cmake(Qt5Sql)
@@ -23,6 +24,7 @@ BuildRequires:	cmake(Qt5Widgets)
 BuildRequires:	cmake(MauiKit)
 BuildRequires:  qml(QMLTermWidget)
 BuildRequires:	cmake(MauiKitFileBrowsing)
+BuildRequires:  cmake(MauiKitTerminal)
 
 Requires: qmltermwidget
 
