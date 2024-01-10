@@ -1,11 +1,11 @@
 #define snapshot 20220107
 
 Name:		station
-Version:	3.0.0
+Version:	3.0.2
 Release:	%{?snapshot:0.%{snapshot}.}1
 URL:		https://invent.kde.org/maui/station/
 Source0:	https://invent.kde.org/maui/station/-/archive/%{?snapshot:master/station-master.tar.bz2#/station-%{snapshot}}%{!?snapshot:v%{version}/station-v%{version}}.tar.bz2
-Group:		Applications/Productivity
+Group:		Applications/Productivity/Maui
 Summary:	Terminal for Plasma Mobile
 License:	GPLv3
 BuildRequires:	ninja
@@ -21,10 +21,10 @@ BuildRequires:	cmake(Qt5Sql)
 BuildRequires:	cmake(Qt5Svg)
 BuildRequires:	cmake(Qt5QuickControls2)
 BuildRequires:	cmake(Qt5Widgets)
-BuildRequires:	cmake(MauiKit)
+BuildRequires:	cmake(MauiKit3)
 BuildRequires:  qml(QMLTermWidget)
-BuildRequires:	cmake(MauiKitFileBrowsing)
-BuildRequires:  cmake(MauiKitTerminal)
+BuildRequires:	cmake(MauiKitFileBrowsing3)
+BuildRequires:  cmake(MauiKitTerminal3)
 
 Requires: qmltermwidget
 Requires: qml(org.mauikit.terminal)
