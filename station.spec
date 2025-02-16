@@ -1,7 +1,7 @@
 #define snapshot 20220107
 
 Name:		station
-Version:	4.0.0
+Version:	4.0.1
 Release:	%{?snapshot:0.%{snapshot}.}1
 URL:		https://invent.kde.org/maui/station/
 Source0:	https://invent.kde.org/maui/station/-/archive/%{?snapshot:master/station-master.tar.bz2#/station-%{snapshot}}%{!?snapshot:v%{version}/maui-station-v%{version}}.tar.bz2
